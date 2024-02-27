@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/cf8e2afea6.js" crossorigin="anonymous"></script>
+  <title>PTIT QUIZ</title>
+    <link rel="icon" href="./assest/ptit-logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg bg-success bg-opacity-10 shadow " id="navbar">
+    <div class="container-fluid ">
+      <a class="navbar-brand fs-4 " href="#"> <img src="./assest/ptit-logo.png" class="icon"> <em>PTITQUIZ</em></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#heading">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./pages/login.html">Login</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary border-white text-dark" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Heading-->
+  
+    <div class="row d-flex justify-content-center mt-5 ms-3 me-3 " id="heading">
+        <div class="col-lg-3 col-md-8 ">
+            <img src="./assest/ptit-logo.png" class="img-thumbnail border-0 rounded-4 shadow p-4">
+        </div>
+
+        <div class="col-lg-6 col-md-12 my-auto fs-4 p-3">
+
+            <p class="text-end fs-1 text-center text-dark"><b>PTIT QUIZ</b></p>
+            <p class="text-center text-dark mt-3 ">Hệ thống thi trắc nghiệm trực tuyến</p>
+            
+            <div class="row d-flex justify-content-center ">
+                <a href="#quiz" type="button" class="btn btn-lg p-2 m-2 border-button col-3 btn btn-primary">Take Quiz</a>
+            </div>
+        </div>
+    </div>
+
+  <!--cards-->
+  <div class="py-" id="quiz">
+        <h1 class="text-center p-3">Ongoing Quiz</h1>
+
+        <div class="mx-auto p-4 m-4 w-75 rounded-4 bg-white">
+        <h3 class="card-title"><img src="./assest/ptit-logo.png" alt="html-img" class="img m-2">HTML</h3>
+        <p class="card-text">The HyperText Markup Language or HTML is the standard markup language
+            for documents designed to be displayed in a web browser. It can be assisted by
+            technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+        <a href="./pages/html-quiz.html" class="btn btn-lg btn-primary">Quiz</a>
+        </div>
+
+        <div class="mx-auto p-4 m-4 w-75 rounded-4 bg-white">
+        <h3 class="card-title"><img src="./assest/ptit-logo.png" alt="html-img" class="img m-2">CSS</h3>
+        <p class="card-text">Cascading Style Sheets is a style sheet language used for
+            describing the presentation of a document written in a markup language such as HTML or XML. CSS is a
+            cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+        <a href="./pages/css-quiz1.html" class="btn btn-lg btn-primary">Quiz</a>
+        </div>
+
+        <div class="mx-auto p-4 m-4 w-75 rounded-4 bg-white">
+        <h3 class="card-title"><img src="./assest/ptit-logo.png" alt="html-img" class="img m-2">JavaScript</h3>
+        <p class="card-text">JavaScript, often abbreviated as JS, is a programming language that is one of the core
+            technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the
+            client side for
+            webpage behavior, often incorporating third-party libraries.</p>
+        <a href="./pages/js-quiz2.html" class="btn btn-lg btn-primary">Quiz</a>
+        </div>
+
+        <div class="mx-auto p-4 m-4 w-75 rounded-4 bg-white">
+        <h3 class="card-title"><img src="./assest/ptit-logo.png" alt="html-img" class="img m-2">Bootstrap</h3>
+        <p class="card-text">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first
+            front-end web development. It contains HTML, CSS and JavaScript-based design templates for
+            typography, forms, buttons, navigation, and other interface components.</p>
+        <a href="./pages/bootstrap-quiz3.html" class="btn btn-lg btn-primary">Quiz</a>
+        </div>
+
+        <div class="mx-auto p-4 m-4 w-75 rounded-4 bg-white">
+        <h3 class="card-title"><img src="./assest/ptit-logo.png" alt="html-img" class="img m-2">CPP</h3>
+        <p class="card-text">C++ is a high-level general-purpose programming language 
+            created by Danish computer scientist Bjarne Stroustrup as an extension of the 
+            C programming language, or "C with Classes".</p>
+        <a href="./pages/cpp-quiz4.html" class="btn btn-lg btn-primary">Quiz</a>
+        </div>
+
+        <div class="mx-auto p-4 m-4 w-75 rounded-4 bg-white">
+        <h3 class="card-title"><img src="./assest/ptit-logo.png" alt="html-img" class="img m-2">PHP</h3>
+        <p class="card-text">PHP is a general-purpose scripting language geared toward web development. 
+            It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995. </p>
+        <a href="./pages/php-quiz5.html" class="btn btn-lg btn-primary">Quiz</a>
+        </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
