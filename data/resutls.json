@@ -1,0 +1,146 @@
+{
+    "exams": [
+        {
+            "id": "e1",
+            "name": "Kiểm tra giữa kỳ",
+            "numberOfQuestions": 10,
+            "studentResults": [
+                {
+                    "studentId": "s1",
+                    "studentName": "Nguyễn Văn A",
+                    "result": [
+                        {
+                            "answeredQuestion": 8,
+                            "correctAnswer": 8
+                        },
+                        {
+                            "answeredQuestion": 10,
+                            "correctAnswer": 9
+                        },
+                        {
+                            "answeredQuestion": 8,
+                            "correctAnswer": 7
+                        },
+                        {
+                            "answeredQuestion": 10,
+                            "correctAnswer": 6
+                        },
+                        {
+                            "answeredQuestion": 9,
+                            "correctAnswer": 5
+                        }
+                    ]
+                },
+                {
+                    "studentId": "s2",
+                    "studentName": "Nguyễn Văn B",
+                    "result": [
+                        {
+                            "answeredQuestion": 10,
+                            "correctAnswer": 9
+                        },
+                        {
+                            "answeredQuestion": 9,
+                            "correctAnswer": 8
+                        },
+                        {
+                            "answeredQuestion": 10,
+                            "correctAnswer": 7
+                        },
+                        {
+                            "answeredQuestion": 7,
+                            "correctAnswer": 6
+                        }
+                    ]
+                },
+                {
+                    "studentId": "s3",
+                    "studentName": "Nguyễn Văn C",
+                    "result": [
+                        {
+                            "answeredQuestion": 8,
+                            "correctAnswer": 6
+                        },
+                        {
+                            "answeredQuestion": 10,
+                            "correctAnswer": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "e2",
+            "name": "Kiểm tra cuối kỳ",
+            "numberOfQuestions": 10,
+            "studentResults": [
+                {
+                    "studentId": "s1",
+                    "studentName": "Nguyễn Văn A",
+                    "result": [
+                        {
+                            "answeredQuestion": 10,
+                            "correctAnswer": 8
+                        },
+                        {
+                            "answeredQuestion": 10,
+                            "correctAnswer": 6
+                        },
+                        {
+                            "answeredQuestion": 7,
+                            "correctAnswer": 5
+                        }
+                    ]
+                },
+                {
+                    "studentId": "s2",
+                    "studentName": "Nguyễn Văn B",
+                    "result": [
+                        {
+                            "answeredQuestion": 10,
+                            "correctAnswer": 9
+                        },
+                        {
+                            "answeredQuestion": 8,
+                            "correctAnswer": 8
+                        },
+                        {
+                            "answeredQuestion": 10,
+                            "correctAnswer": 7
+                        },
+                        {
+                            "answeredQuestion": 7,
+                            "correctAnswer": 6
+                        },
+                        {
+                            "answeredQuestion": 8,
+                            "correctAnswer": 5
+                        }
+                    ]
+                },
+                {
+                    "studentId": "s3",
+                    "studentName": "Nguyễn Văn C",
+                    "result": [
+                        {
+                            "answeredQuestion": 5,
+                            "correctAnswer": 4
+                        },
+                        {
+                            "answeredQuestion": 8,
+                            "correctAnswer": 7
+                        },
+                        {
+                            "answeredQuestion": 9,
+                            "correctAnswer": 6
+                        },
+                        {
+                            "answeredQuestion": 8,
+                            "correctAnswer": 5
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

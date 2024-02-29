@@ -1,0 +1,57 @@
+body {
+  min-height: 75rem;
+}
+
+.ptit-color {
+    background-color: #bb2019;
+}
+
+.btn-ptit {
+    border-color: #bb2019;
+    color: #bb2019;
+}
+
+.btn-ptit:hover,
+.btn-ptit:active,
+.btn-ptit:visited,
+.btn-ptit:focus,
+.btn-ptit:active:focus,
+.btn-ptit:active:hover,
+.btn-ptit:hover:focus,
+.btn-ptit:hover:active,
+.btn-ptit:active:hover:focus,
+.btn-ptit:active:focus:hover,
+.btn-ptit:hover:active:focus,
+.btn-ptit:hover:focus:active,
+.btn-ptit:focus:hover:active,
+.btn-ptit:focus:active:hover,
+.btn-ptit:active:focus:hover,
+.btn-ptit:active:hover:focus {
+    background-color: #bb2019;
+    border-color: #bb2019;
+}
+
+.btn-outline-ptit {
+  background-color: #bb2019;
+  border-color: #bb2019;
+}
+
+.btn-outline-ptit:hover,
+.btn-outline-ptit:active,
+.btn-outline-ptit:visited,
+.btn-outline-ptit:focus,
+.btn-outline-ptit:active:focus,
+.btn-outline-ptit:active:hover,
+.btn-outline-ptit:hover:focus,
+.btn-outline-ptit:hover:active,
+.btn-outline-ptit:active:hover:focus,
+.btn-outline-ptit:active:focus:hover,
+.btn-outline-ptit:hover:active:focus,
+.btn-outline-ptit:hover:focus:active,
+.btn-outline-ptit:focus:hover:active,
+.btn-outline-ptit:focus:active:hover,
+.btn-outline-ptit:active:focus:hover,
+.btn-outline-ptit:active:hover:focus {
+  background-color: #bb2019;
+  border-color: #bb2019;
+}

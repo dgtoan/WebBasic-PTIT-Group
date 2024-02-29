@@ -1,0 +1,7 @@
+function showResultsView() {
+
+}
+
+function showStatisticsView() {
+    
+}

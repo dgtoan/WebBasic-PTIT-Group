@@ -1,0 +1,20 @@
+{
+    "users": [
+        {
+            "userId": "B21DCCN715",
+            "name": "Dương Văn Toản",
+            "userName": "duongtoan2k3",
+            "email": "duongtoan2k3@gmail.com",
+            "password": "123456",
+            "isTeacher": true
+        },
+        {
+            "userId": "B21DCCN716",
+            "name": "Nguyễn Văn A",
+            "userName": "nguyenvana",
+            "email": "",
+            "password": "123456",
+            "isTeacher": false
+        }
+    ]
+}

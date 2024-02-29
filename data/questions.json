@@ -1,0 +1,44 @@
+{
+    "questions": [
+        {
+            "question": "What is the capital of France?",
+            "answers": [
+                "London",
+                "Paris",
+                "New York",
+                "Berlin"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "What is the capital of Germany?",
+            "answers": [
+                "London",
+                "Paris",
+                "New York",
+                "Berlin"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "What is the capital of England?",
+            "answers": [
+                "London",
+                "Paris",
+                "New York",
+                "Berlin"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "What is the capital of the United States?",
+            "answers": [
+                "London",
+                "Paris",
+                "Washington D.C.",
+                "Berlin"
+            ],
+            "correct": 2
+        }
+    ]
+}
