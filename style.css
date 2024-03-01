@@ -11,6 +11,10 @@ body {
     color: #bb2019;
 }
 
+.hidden {
+    display: none;
+}
+
 .btn-ptit:hover,
 .btn-ptit:active,
 .btn-ptit:visited,

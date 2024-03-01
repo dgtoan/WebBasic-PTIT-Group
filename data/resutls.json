@@ -3,144 +3,17 @@
         {
             "id": "e1",
             "name": "Kiểm tra giữa kỳ",
-            "numberOfQuestions": 10,
-            "studentResults": [
-                {
-                    "studentId": "s1",
-                    "studentName": "Nguyễn Văn A",
-                    "result": [
-                        {
-                            "answeredQuestion": 8,
-                            "correctAnswer": 8
-                        },
-                        {
-                            "answeredQuestion": 10,
-                            "correctAnswer": 9
-                        },
-                        {
-                            "answeredQuestion": 8,
-                            "correctAnswer": 7
-                        },
-                        {
-                            "answeredQuestion": 10,
-                            "correctAnswer": 6
-                        },
-                        {
-                            "answeredQuestion": 9,
-                            "correctAnswer": 5
-                        }
-                    ]
-                },
-                {
-                    "studentId": "s2",
-                    "studentName": "Nguyễn Văn B",
-                    "result": [
-                        {
-                            "answeredQuestion": 10,
-                            "correctAnswer": 9
-                        },
-                        {
-                            "answeredQuestion": 9,
-                            "correctAnswer": 8
-                        },
-                        {
-                            "answeredQuestion": 10,
-                            "correctAnswer": 7
-                        },
-                        {
-                            "answeredQuestion": 7,
-                            "correctAnswer": 6
-                        }
-                    ]
-                },
-                {
-                    "studentId": "s3",
-                    "studentName": "Nguyễn Văn C",
-                    "result": [
-                        {
-                            "answeredQuestion": 8,
-                            "correctAnswer": 6
-                        },
-                        {
-                            "answeredQuestion": 10,
-                            "correctAnswer": 5
-                        }
-                    ]
-                }
-            ]
+            "soLanThi": 30,
+            "soLanHoanThanh": 25,
+            "diem": [6, 7, 5, 8, 6, 4, 7, 8, 9, 5, 6, 7, 8, 6, 5, 7, 8, 9, 10, 4, 5, 6, 7, 8, 2]
         },
         {
             "id": "e2",
             "name": "Kiểm tra cuối kỳ",
-            "numberOfQuestions": 10,
-            "studentResults": [
-                {
-                    "studentId": "s1",
-                    "studentName": "Nguyễn Văn A",
-                    "result": [
-                        {
-                            "answeredQuestion": 10,
-                            "correctAnswer": 8
-                        },
-                        {
-                            "answeredQuestion": 10,
-                            "correctAnswer": 6
-                        },
-                        {
-                            "answeredQuestion": 7,
-                            "correctAnswer": 5
-                        }
-                    ]
-                },
-                {
-                    "studentId": "s2",
-                    "studentName": "Nguyễn Văn B",
-                    "result": [
-                        {
-                            "answeredQuestion": 10,
-                            "correctAnswer": 9
-                        },
-                        {
-                            "answeredQuestion": 8,
-                            "correctAnswer": 8
-                        },
-                        {
-                            "answeredQuestion": 10,
-                            "correctAnswer": 7
-                        },
-                        {
-                            "answeredQuestion": 7,
-                            "correctAnswer": 6
-                        },
-                        {
-                            "answeredQuestion": 8,
-                            "correctAnswer": 5
-                        }
-                    ]
-                },
-                {
-                    "studentId": "s3",
-                    "studentName": "Nguyễn Văn C",
-                    "result": [
-                        {
-                            "answeredQuestion": 5,
-                            "correctAnswer": 4
-                        },
-                        {
-                            "answeredQuestion": 8,
-                            "correctAnswer": 7
-                        },
-                        {
-                            "answeredQuestion": 9,
-                            "correctAnswer": 6
-                        },
-                        {
-                            "answeredQuestion": 8,
-                            "correctAnswer": 5
-                        }
-                    ]
-                }
-            ]
+            "soLanThi": 50,
+            "soLanHoanThanh": 48,
+            "diem": [6, 3, 5, 8, 6, 4, 7, 2, 9, 5, 6, 7, 8, 6, 5, 7, 2, 9, 10, 4, 5, 6, 7, 8, 6, 7, 5, 8, 6, 4, 7, 8, 9, 5, 6, 7, 8, 6, 5, 7, 8, 9, 10, 4, 5, 6, 7, 8]
+            
         }
     ]
 }
