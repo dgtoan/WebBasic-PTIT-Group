@@ -1,0 +1,159 @@
+{
+    "studentResults": [
+        {
+            "studentId": "B21DCCN715",
+            "studentName": "Dương Văn Toản",
+            "joinedExams": [
+                {
+                    "id": "e1",
+                    "name": "Kiểm tra giữa kỳ I",
+                    "examScore": 7,
+                    "date": "2023-10-10"
+                },
+                {
+                    "id": "e2",
+                    "name": "Kiểm tra cuối kỳ I",
+                    "examScore": 8,
+                    "date": "2023-12-18"
+                },
+                {
+                    "id": "e3",
+                    "name": "Kiểm tra giữa kỳ II",
+                    "examScore": 6,
+                    "date": "2024-04-15"
+                },
+                {
+                    "id": "e4",
+                    "name": "Kiểm tra cuối kỳ II",
+                    "examScore": 7,
+                    "date": "2024-06-28"
+                }
+            
+            ]
+        },
+        {
+            "studentId": "B21DCCN716",
+            "studentName": "Kiều Linh Trang",
+            "joinedExams": [
+                {
+                    "id": "e1",
+                    "name": "Kiểm tra giữa kỳ I",
+                    "examScore": 8,
+                    "date": "2023-10-10"
+                },
+                {
+                    "id": "e2",
+                    "name": "Kiểm tra cuối kỳ I",
+                    "examScore": 9,
+                    "date": "2023-12-18"
+                },
+                {
+                    "id": "e3",
+                    "name": "Kiểm tra giữa kỳ II",
+                    "examScore": 7,
+                    "date": "2024-04-15"
+                },
+                {
+                    "id": "e4",
+                    "name": "Kiểm tra cuối kỳ II",
+                    "examScore": 8,
+                    "date": "2024-06-28"
+                }
+            
+            ]
+        },
+        {
+            "studentId": "B21DCCN112",
+            "studentName": "Nguyễn Văn Nam",
+            "joinedExams": [
+                {
+                    "id": "e1",
+                    "name": "Kiểm tra giữa kỳ I",
+                    "examScore": 9,
+                    "date": "2023-10-10"
+                },
+                {
+                    "id": "e2",
+                    "name": "Kiểm tra cuối kỳ I",
+                    "examScore": 8,
+                    "date": "2023-12-18"
+                },
+                {
+                    "id": "e3",
+                    "name": "Kiểm tra giữa kỳ II",
+                    "examScore": 7,
+                    "date": "2024-04-15"
+                },
+                {
+                    "id": "e4",
+                    "name": "Kiểm tra cuối kỳ II",
+                    "examScore": 8,
+                    "date": "2024-06-28"
+                }
+            
+            ]
+        },
+        {
+            "studentId": "B21DCCN252",
+            "studentName": "Nguyễn Văn Dũng",
+            "joinedExams": [
+                {
+                    "id": "e1",
+                    "name": "Kiểm tra giữa kỳ I",
+                    "examScore": 7,
+                    "date": "2023-10-10"
+                },
+                {
+                    "id": "e2",
+                    "name": "Kiểm tra cuối kỳ I",
+                    "examScore": 8,
+                    "date": "2023-12-18"
+                },
+                {
+                    "id": "e3",
+                    "name": "Kiểm tra giữa kỳ II",
+                    "examScore": 6,
+                    "date": "2024-04-15"
+                },
+                {
+                    "id": "e4",
+                    "name": "Kiểm tra cuối kỳ II",
+                    "examScore": 7,
+                    "date": "2024-06-28"
+                }
+            
+            ]
+        },
+        {
+            "studentId": "B21DCCN132",
+            "studentName": "Hoàng Văn Phúc",
+            "joinedExams": [
+                {
+                    "id": "e1",
+                    "name": "Kiểm tra giữa kỳ I",
+                    "examScore": 8,
+                    "date": "2023-10-10"
+                },
+                {
+                    "id": "e2",
+                    "name": "Kiểm tra cuối kỳ I",
+                    "examScore": 9,
+                    "date": "2023-12-18"
+                },
+                {
+                    "id": "e3",
+                    "name": "Kiểm tra giữa kỳ II",
+                    "examScore": 7,
+                    "date": "2024-04-15"
+                },
+                {
+                    "id": "e4",
+                    "name": "Kiểm tra cuối kỳ II",
+                    "examScore": 8,
+                    "date": "2024-06-28"
+                }
+            
+            ]
+        }
+    ]
+}

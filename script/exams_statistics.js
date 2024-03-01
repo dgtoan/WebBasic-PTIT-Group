@@ -1,10 +1,5 @@
 let examsData;
 
-function initData() {
-    loadExamsData();
-}
-
-// ################################################################################################
 function loadExamsData() {
     const jsonFile = 'data/resutls.json';
     fetch(jsonFile)
@@ -14,14 +9,16 @@ function loadExamsData() {
         });
 }
 
-function showStatisticsView() {
+function showStatistics() {
+    if (!isAdmin) return;
+    
     document.getElementById('introduce-container').style.display = 'none';
     const container = document.getElementById('main-container');
 
     container.innerHTML = '';
     container.style.display = 'block';
     let html = `<div class="accordion" id="accordionExample">
-                    <h2 class="text-center mb-3">Thống kê kỳ thi</h2>`;
+                    <h2 class="text-center mb-4">Thống kê kỳ thi</h2>`;
 
     for (let i = 0; i < examsData.length; i++) {
         let exam = examsData[i];
@@ -34,7 +31,10 @@ function showStatisticsView() {
             </h2>
             <div id="collapse${i}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <h2 class="text-center mb-5">${exam.name}</h2>
+                    <div class="d-flex justify-content-between  mb-5">
+                        <h2 class="text-center">${exam.name}</h2>
+                        <button id="print-button-${i}" type="button" class="btn btn-sm btn-primary btn-outline-ptit"><span class="material-symbols-outlined">print</span></button>
+                    </div>
                     <div class="row">
                         <div class="my-3 col-4">
                             <canvas id="bieuDoThamGia${i}"></canvas>
@@ -55,11 +55,17 @@ function showStatisticsView() {
     container.innerHTML = html;
 
     for (let i = 0; i < examsData.length; i++) {
-        showExamsStatisticsView(examsData[i], i);
+        showExamsStatistics(examsData[i], i);
+    }
+
+    for (let i = 0; i < examsData.length; i++) {
+        document.getElementById('print-button-' + i).addEventListener('click', function() {
+            printStatistics(i);
+        });
     }
 }
 
-function showExamsStatisticsView(examsData, index) {
+function showExamsStatistics(examsData, index) {
     const bdThamGia = document.getElementById('bieuDoThamGia' + index);
     new Chart(bdThamGia, {
         type: 'doughnut',
@@ -118,16 +124,8 @@ function showExamsStatisticsView(examsData, index) {
     });
 }
 
-// ################################################################################################
-function loadStudentResultsData() {
-    const jsonFile = 'data/studentResutls.json';
-    fetch(jsonFile)
-        .then(response => response.json())
-        .then(data => {
-            examsData = data.exams;
-        });
-}
-
-function showStudentResultsView() {
-
+function printStatistics(index) {
+    let printWindow = window.open('', '', 'width=800,height=600');
+    printWindow.document.close();
+    printWindow.print();
 }
