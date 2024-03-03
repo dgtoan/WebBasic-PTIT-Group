@@ -1,5 +1,3 @@
-
-
 function loadStudentResultsData() {
     const jsonFile = 'data/studentResults.json';
     fetch(jsonFile)
@@ -8,10 +6,6 @@ function loadStudentResultsData() {
             studentResultsData = data.studentResults;
         });
 }
-
-
-
-showDashBoard();
 
 function showDashBoard(data = null) {
     if (!isAdmin) return;
