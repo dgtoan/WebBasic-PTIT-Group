@@ -1,87 +1,85 @@
 body {
-    background-color: #f8f9fa;
-}
-/* login */
-.red {
-    background-color: #d30000;
+  min-height: 75rem;
 }
 
-.login-form {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+.ptit-color {
+    background-color: #bb2019;
 }
 
-.login-form h2 {
-    color: #333;
+.btn-ptit {
+    border-color: #bb2019;
+    color: #bb2019;
 }
 
-.login-form input[type="email"],
-.login-form input[type="password"] {
-    border-radius: 5px;
-}
-
-.login-form button[type="submit"] {
-    border-radius: 5px;
-}
-
-@media (min-width: 768px) {
-    .login-form {
-        margin-top: 50px;
-    }
-}
-
-.form-control:focus {
-    border-color: #d3000084;
-    box-shadow: 0 0 0 0.2rem #d300004e;
-}
-
-.btn {
-    background-color: #d30000;
-}
-
-.btn:hover {
-    background-color: #d30000;
-}
-
-.btn:disabled {
-    background-color: #d30000A0;
-}
-
-/* dashboard */
-
-.navbar {
-    background-color: #d30000;
-}
-/* css thẻ a, không còn dâu gạch chân */
-a {
-    text-decoration: none;
-    text-decoration-style: #fff;
-}
-/* css cho thẻ li, chiều dài = 2/3 chiều dài mặc đinh ban đầu, căn lề các li về bên phải, gióng theo nút menu  */
-li {
-    width: 75%;   
-}
-li:hover {
-    border-color: #d3000084;
-    box-shadow: 0 0 0 0.1rem #d300004e;
-}
-
-#dateTimePicker {
+.hidden {
     display: none;
 }
+.btn-add{
+  margin-left: auto;
+  background-color: #bb2019;
+  border-color: #bb2019;
+}
+.btn-add:hover {
+  background-color: #fa0c00;
 
-
-/* 
-.questionItem {
-    border: 1px solid #d30000;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
+}
+.nav-link2 {
+  background-color: #bb2019;
+  border-color: #bb2019;
+  color: #ffffff;
+  margin-right: 5px;
+}
+.btn-primary {
+  background-color: #bb2019;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #fa0c00;
+  color: #ffffff;
+}
+.nav-link:focus, .nav-link:hover {
+  color: #ffffff;
+}
+.btn-ptit:hover,
+.btn-ptit:active,
+.btn-ptit:visited,
+.btn-ptit:focus,
+.btn-ptit:active:focus,
+.btn-ptit:active:hover,
+.btn-ptit:hover:focus,
+.btn-ptit:hover:active,
+.btn-ptit:active:hover:focus,
+.btn-ptit:active:focus:hover,
+.btn-ptit:hover:active:focus,
+.btn-ptit:hover:focus:active,
+.btn-ptit:focus:hover:active,
+.btn-ptit:focus:active:hover,
+.btn-ptit:active:focus:hover,
+.btn-ptit:active:hover:focus {
+    background-color: #bb2019;
+    border-color: #bb2019;
 }
 
-.options {
-    margin-top: 10px;
-} */
+.btn-outline-ptit {
+  background-color: #bb2019;
+  border-color: #bb2019;
+}
 
+.btn-outline-ptit:hover,
+.btn-outline-ptit:active,
+.btn-outline-ptit:visited,
+.btn-outline-ptit:focus,
+.btn-outline-ptit:active:focus,
+.btn-outline-ptit:active:hover,
+.btn-outline-ptit:hover:focus,
+.btn-outline-ptit:hover:active,
+.btn-outline-ptit:active:hover:focus,
+.btn-outline-ptit:active:focus:hover,
+.btn-outline-ptit:hover:active:focus,
+.btn-outline-ptit:hover:focus:active,
+.btn-outline-ptit:focus:hover:active,
+.btn-outline-ptit:focus:active:hover,
+.btn-outline-ptit:active:focus:hover,
+.btn-outline-ptit:active:hover:focus {
+  background-color: #bb2019;
+  border-color: #bb2019;
+}
