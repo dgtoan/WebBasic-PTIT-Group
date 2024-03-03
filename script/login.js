@@ -34,7 +34,7 @@ bntLogin.addEventListener("click", (e) => {
       );
       if (user) {
         alert("Đăng nhập thành công");
-        window.location.href = "./../index.html";
+        window.location.href = "./../i~ndex.html";
       } else {
         alert("Sai thông tin đăng nhập");
       }
