@@ -1,3 +1,12 @@
+let isLogin = true;
+let isAdmin = true;
+
+function showAdminMenu() {
+    if (isAdmin) {
+        document.getElementById('admin-menu').style.display = 'block';
+    }
+}
+
 let apiUser = "http://localhost:3000/user";
 
 //login
@@ -32,14 +41,4 @@ bntLogin.addEventListener("click", (e) => {
     });
   }
 });
-
-
-let isLogin = true;
-let isAdmin = true;
-
-function showAdminMenu() {
-    if (isAdmin) {
-        document.getElementById('admin-menu').style.display = 'block';
-    }
-}
 
