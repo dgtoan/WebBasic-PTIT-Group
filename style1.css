@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #bb2019;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    margin: 20px;
+}
+
+label {
+    
+    margin-right: 10px;
+    border-color: #bb2019;
+}
+
+select, input {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#examList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.examCard {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+.logo-container {
+    width: 39px;
+    height: 39px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Thêm viền và hiệu ứng cho ô chọn giá trị */
+select, input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+select:hover, input:hover {
+    border-color: #007bff; /* Màu khi di chuột qua */
+}
+
+select:focus, input:focus {
+    outline: none;
+    border-color: #007bff; /* Màu khi ô đang được chọn */
+}
+
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(206, 92%, 94%);
+}
+.row{
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 3px 20px #ffcc00;
+}
+img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.btn1{
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 100px;
+    background-color: #bb1919f7;
+    color:white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.btn1:hover {
+    background-color: rgb(300, 0, 0);
+    color: white;
+}
+
+.examCard {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.examCard button:hover {
+    background-color: rgb(300, 0, 0);
+    color: white;
+}
+
+.examCard button {
+    background-color: #bb2019; /* Màu nền của nút */
+    color: #fff; /* Màu chữ của nút */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px; /* Góc bo tròn cho nút */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
