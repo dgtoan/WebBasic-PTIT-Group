@@ -14,7 +14,31 @@ body {
 .hidden {
     display: none;
 }
+.btn-add{
+  margin-left: auto;
+  background-color: #bb2019;
+  border-color: #bb2019;
+}
+.btn-add:hover {
+  background-color: #fa0c00;
 
+}
+.nav-link2 {
+  background-color: #bb2019;
+  border-color: #bb2019;
+  color: #ffffff;
+  margin-right: 5px;
+}
+.btn-primary {
+  background-color: #bb2019;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #fa0c00;
+  color: #ffffff;
+}
+.nav-link:focus, .nav-link:hover {
+  color: #ffffff;
+}
 .btn-ptit:hover,
 .btn-ptit:active,
 .btn-ptit:visited,

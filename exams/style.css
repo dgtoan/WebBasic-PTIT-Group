@@ -1,0 +1,87 @@
+body {
+    background-color: #f8f9fa;
+}
+/* login */
+.red {
+    background-color: #d30000;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    color: #333;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    border-radius: 5px;
+}
+
+.login-form button[type="submit"] {
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .login-form {
+        margin-top: 50px;
+    }
+}
+
+.form-control:focus {
+    border-color: #d3000084;
+    box-shadow: 0 0 0 0.2rem #d300004e;
+}
+
+.btn {
+    background-color: #d30000;
+}
+
+.btn:hover {
+    background-color: #d30000;
+}
+
+.btn:disabled {
+    background-color: #d30000A0;
+}
+
+/* dashboard */
+
+.navbar {
+    background-color: #d30000;
+}
+/* css thẻ a, không còn dâu gạch chân */
+a {
+    text-decoration: none;
+    text-decoration-style: #fff;
+}
+/* css cho thẻ li, chiều dài = 2/3 chiều dài mặc đinh ban đầu, căn lề các li về bên phải, gióng theo nút menu  */
+li {
+    width: 75%;   
+}
+li:hover {
+    border-color: #d3000084;
+    box-shadow: 0 0 0 0.1rem #d300004e;
+}
+
+#dateTimePicker {
+    display: none;
+}
+
+
+/* 
+.questionItem {
+    border: 1px solid #d30000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.options {
+    margin-top: 10px;
+} */
+
