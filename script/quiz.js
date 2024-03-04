@@ -1,5 +1,5 @@
 let questions = [];
-fetch('../data/questions.json')
+fetch('/WebBasic-PTIT-Group/data/questions.json')
         .then(response => response.json())
         .then(data => {
             // Replace the inline questions array with the fetched data
