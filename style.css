@@ -84,4 +84,52 @@ body {
   border-color: #bb2019;
 }
 
+.red {
+  background-color: #d30000;
+}
+
+.form-control:focus {
+  border-color: #d3000084;
+  box-shadow: 0 0 0 0.2rem #d300004e;
+}
+
+
+
+.btn:disabled {
+  background-color: #d30000A0;
+}
+
+/* dashboard */
+
+.navbar {
+  background-color: #d30000;
+}
+/* css thẻ a, không còn dâu gạch chân */
+
+/* css cho thẻ li, chiều dài = 2/3 chiều dài mặc đinh ban đầu, căn lề các li về bên phải, gióng theo nút menu  */
+
+
+
+.btnview {
+  background-color: #bb2019;
+  border-color: #bb2019;
+}
+
+
+.vertical-line {
+  border-left: 2px solid gray; /* Định dạng đường thẳng đứng */
+  height: 30px; /* Chiều cao của đường thẳng đứng */
+  color: white; /* Màu của đường thẳng đứng */
+}
+
+.btnview :hover {
+  background-color: #fa0c00;
+  border-color: #fa0c00;
+}
+.btnview :active {
+  background-color: #fa0c00;
+  border-color: #fa0c00;
+}
+
+
 
