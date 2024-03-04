@@ -59,7 +59,7 @@ function startExam(examId) {
             alert('Chưa tới thời gian yêu cầu');
         } else {
             alert(`Bắt đầu làm bài thi số ${examId}`);
-            window.location.href = "https://www.youtube.com/";
+            window.location.href = "https://dgtoan.github.io/WebBasic-PTIT-Group/pages/quiz.html";
         }
     }
 }
