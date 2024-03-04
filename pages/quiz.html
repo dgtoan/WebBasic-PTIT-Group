@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../test.css">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <title>Thi Trắc Nghiệm</title>
+</head>
+<body>
+    <header class="tieude">
+        <img src="../assest/ptit-logo.png" alt="logo" id="logo">
+        <h1 id="nameExam">Bài Thi Trắc Nghiệm</h1>
+    </header>
+    <div class="checkStart" id="checkStart">
+        <button onclick="startQuiz()">Bắt đầu làm bài</button>
+    </div>
+    <div id="quiz-container" class="hidden">
+        <p id="timer">Thời gian còn lại: <span id="countdown"></span></p>
+        <div id="question-container">
+            <!-- Câu hỏi sẽ được hiển thị ở đây -->
+        </div>
+        <button id="submit" onclick="submitQuiz()">Nộp bài</button>
+    </div>
+     <div id="overlay" class="overlay">
+        <div class="modal">
+            <p>Bạn có chắc chắn muốn nộp bài khi chưa hết giờ không?</p>
+            <button onclick="confirmSubmission()">Đồng ý</button>
+            <button onclick="cancelSubmission()">Hủy bỏ</button>
+        </div>
+    </div>
+
+    <script src="../script/quiz.js"></script>
+</body>
+</html>

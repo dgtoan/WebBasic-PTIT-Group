@@ -1,0 +1,51 @@
+.correct-answer {
+    color: green; /* Màu cho câu hỏi đúng */
+}
+
+.incorrect-answer {
+    color: red; /* Màu cho câu hỏi sai */
+    font-weight: bold; /* Tăng độ đậm cho câu hỏi sai */
+}
+
+#quizDetails{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#result-container{
+    
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    margin-left: 50px;
+
+}
+.tieude{
+    display: flex;
+    background-color: red;
+    color: #fff;
+}
+
+#logo{
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
