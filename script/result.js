@@ -20,7 +20,7 @@ document.getElementById("user-score").textContent = scores.toFixed(2);
 
 let questions = [];
 
-fetch('/data/questions.json')
+fetch('../data/questions.json')
     .then(response => response.json())
     .then(data => {
         // Replace the inline questions array with the fetched data
@@ -40,10 +40,10 @@ function resultDetail() {
         const questionDetail = document.createElement('div');
         questionDetail.innerHTML += `
             <div class="question-result">
-            <p>Câu hỏi ${questions[index].question}</p>
-            <p>Câu trả lời của bạn: ${selectedOption ? questions[index][selectedOption] : 'Chưa chọn'}</p>
-            ${isCorrect ? '' : `<p>Đáp án đúng:${questions[index][questions[index].correct]}</p>`}
-            <p>${isCorrect ? 'Đúng' : 'Sai'}</p>
+            <p><strong>Câu hỏi ${questions[index].question}</strong></p>
+            <p><strong>Câu trả lời của bạn:</strong> ${selectedOption ? questions[index][selectedOption] : 'Chưa chọn'}</p>
+            ${isCorrect ? '' : `<p><strong>Đáp án đúng:</strong>${questions[index][questions[index].correct]}</p>`}
+            <p><strong>${isCorrect ? 'Đúng' : 'Sai'}</strong></p>
         </div>`;
         res.appendChild(questionDetail);
     }
