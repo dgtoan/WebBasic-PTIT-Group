@@ -1,5 +1,5 @@
 let questions = [];
-fetch('/data/questions.json')
+fetch('../data/questions.json')
         .then(response => response.json())
         .then(data => {
             // Replace the inline questions array with the fetched data
@@ -85,7 +85,7 @@ function submitQuiz() {
         localStorage.setItem("userAnswer", JSON.stringify(userAnswers));
         getCorrectAnswer();
         localStorage.setItem("correctAnswer", JSON.stringify(correctAnswers));
-        window.location.href = "/pages/results.html";
+        window.location.href = "./results.html";
     }
 }
 
@@ -99,7 +99,7 @@ function confirmSubmission() {
     localStorage.setItem("userAnswer", JSON.stringify(userAnswers));
     getCorrectAnswer();
     localStorage.setItem("correctAnswer",JSON.stringify(correctAnswers));
-    window.location.href = "./pages/results.html";
+    window.location.href = "./results.html";
 }
 
 function cancelSubmission() {
