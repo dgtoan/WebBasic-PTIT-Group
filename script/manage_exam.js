@@ -1,159 +1,103 @@
-let studentResultsData;
+// Mock data for exams
+const exams = [
+    { id: 1, name: 'Luyện Tập 1', type: 'Luyện Tập', status: 'Đang mở' },
+    { id: 2, name: 'Giữa Kỳ 1', type: 'Giữa Kỳ', status: 'Chưa tới lịch' },
+    { id: 3, name: 'Cuối Kỳ 1', type: 'Cuối Kỳ', status: 'Chưa tới lịch' },
+    // Add more exam data as needed
+];
 
-function loadStudentResultsData() {
-    const jsonFile = 'data/.json';
-    fetch(jsonFile)
-        .then(response => response.json())
-        .then(data => {
-            studentResultsData = data.studentResults;
-        });
+function redirectToAnotherPage() {
+    window.location.href = "./../index.html";
 }
 
-function searchByEnter(input) {
-    if (event.key === 'Enter') {
-        searchStudentResults();
+
+function updateExamStatus() {
+    const currentTime = new Date();
+
+    exams.forEach(exam => {
+        if (exam.type === 'Luyện Tập') {
+            // Bài luyện tập 1 luôn mở
+            exam.status = 'Đang mở';
+        } else {
+            const accessTime = new Date("2024-03-10T12:00:00");
+            if (currentTime < accessTime) {
+                // Bài thi chưa tới thời gian
+                exam.status = 'Chưa tới lịch';
+            } else {
+                // Bài thi mở sau thời gian nhất định
+                exam.status = 'Đang mở';
+            }
+        }
+    });
+}
+
+// Call the function to update exam status
+updateExamStatus();
+
+// Function to display exams based on filters
+function filterExams() {
+    const examType = document.getElementById('examType').value;
+    const examStatus = document.getElementById('examStatus').value;
+    const searchQuery = document.getElementById('searchExam').value.toLowerCase();
+
+    const filteredExams = exams.filter(exam => {
+        const isTypeMatch = examType === 'all' || exam.type === examType;
+        const isStatusMatch = examStatus === 'all' || exam.status === examStatus;
+        const isSearchMatch = exam.name.toLowerCase().includes(searchQuery);
+
+        return isTypeMatch && isStatusMatch && isSearchMatch;
+    });
+
+    displayExams(filteredExams);
+}
+
+function startExam(examId) {
+    const currentExam = exams.find(exam => exam.id === examId);
+
+    if (currentExam) {
+        if (currentExam.status === 'Chưa tới lịch') {
+            alert('Chưa tới thời gian yêu cầu');
+        } else {
+            alert(`Bắt đầu làm bài thi số ${examId}`);
+            window.location.href = "https://dgtoan.github.io/WebBasic-PTIT-Group/pages/quiz.html";
+        }
     }
 }
 
-function searchStudentResults() {
-    const searchInput = document.getElementById('search-exam-input').value;
-    if (!searchInput) {
-        showStudentResults();
-        return;
+
+function manageExam() {
+    var currentTime = new Date();
+    var accessTime = new Date("2024-03-10T12:00:00");
+              
+    if (currentTime < accessTime) {
+        
+    } else {
+        window.location.href = "link_den_trang_quan_ly_ky_thi.html";
     }
-    const data = studentResultsData.filter(student =>
-        removeVietnameseTones(student.studentName.toLowerCase()).includes(removeVietnameseTones(searchInput.toLowerCase())) ||
-        student.studentId.toLowerCase().includes(searchInput.toLowerCase())
-    );
-    showStudentResults(data);
 }
 
-function showStudentResults(data = null) {
-    if (!isAdmin) return;
-    if (!data) data = studentResultsData;
+// Function to display exams on the webpage
+function displayExams(exams) {
+    const examListContainer = document.getElementById('examList');
+    examListContainer.innerHTML = '';
 
-    document.getElementById('introduce-container').style.display = 'none';
-    const container = document.getElementById('main-container');
-
-    container.innerHTML = '';
-    container.style.display = 'block';
-    let html = `<div class="d-flex mb-4">
-                    <h2 class="text-start col">Kết quả học tập</h2>
-                    <div class="col"></div>
-                    <div class="input-group mb-3 col">
-                        <input id="search-exam-input" type="text" class="form-control" placeholder="Tên" onkeydown="searchByEnter(this)" aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-primary btn-outline-ptit" type="button" onclick="searchStudentResults()">Search</button>
-                    </div>
-                </div>
-                <table class="table table-striped table-hover">
-                <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">MSV</th>
-                    <th scope="col">Họ và Tên</th>
-                    <th scope="col">Số kỳ thi tham gia</th>
-                    <th scope="col">Detail</th>
-                </tr>
-                </thead>
-                <tbody class="table-group-divider">`;
-
-    data.forEach((student, index) => {
-        html += `<tr>
-                    <th scope="row">${index + 1}</th>
-                    <td>${student.studentId}</td>
-                    <td>${student.studentName}</td>
-                    <td>${student.joinedExams.length}</td>
-                    <td><button id="showStudent${index}" type="button" class="btn btn-sm btn-primary btn-outline-ptit" data-bs-toggle="modal" data-bs-target="#studentModal${index}">View</button></td>
-                </tr>`;
+    exams.forEach(exam => {
+        const examCard = document.createElement('div');
+        examCard.classList.add('examCard');
+        examCard.innerHTML = `<h3>${exam.name}</h3><p>Loại: ${exam.type}</p><p>Trạng Thái: ${exam.status}</p><button onclick="startExamAndManageExam(${exam.id})">Bắt đầu làm</button>`;
+        examListContainer.appendChild(examCard);
     });
-    html += `</tbody></table>`;
-
-    data.forEach((student, index) => {
-        html += `<div class="modal fade" id="studentModal${index}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">${student.studentName} - ${student.studentId}</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" id="modal-content-${index}">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button id="export-btn-${index}" type="button" class="btn btn-primary">Export</button>
-            </div>
-          </div>
-        </div>
-      </div>
-        `
-    });
-    container.innerHTML = html;
-
-    data.forEach((student, index) => {
-        document.getElementById(`showStudent${index}`).addEventListener('click', () => showStudent(student, index));
-        document.getElementById(`export-btn-${index}`).addEventListener('click', () => exportStudentResults(student, index));
-    });
-
 }
 
-function showStudent(student, index) {
-    const modalContent = document.getElementById(`modal-content-${index}`);
-    modalContent.innerHTML = '';
-    let html = `<table id="student-result-table-${index}" class="table table-striped table-hover">
-                <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Kỳ thi</th>
-                    <th scope="col">Điểm</th>
-                    <th scope="col">Thời gian</th>
-                </tr>
-                </thead>
-                <tbody class="table-group-divider">`;
-    student.joinedExams.forEach((exam, i) => {
-        html += `<tr>
-                    <th scope="row">${i + 1}</th>
-                    <td>${exam.name}</td>
-                    <td>${exam.examScore}</td>
-                    <td>${exam.date}</td>
-                </tr>`;
-    });
-    html += `</tbody></table>`;
-    modalContent.innerHTML = html;
+// Function to simulate starting an exam
+
+
+function startExamAndManageExam(examId) {
+    startExam(examId);
+    manageExam();
 }
 
-function exportStudentResults(student, index) {
-    const table = document.getElementById(`student-result-table-${index}`);
-    const ws = XLSX.utils.table_to_sheet(table);
-    const wb = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
-    XLSX.writeFile(wb, `${student.studentName}-${student.studentId}-results.xlsx`);
-}
+// Initial display of all exams
+displayExams(exams);
 
-function removeVietnameseTones(str) {
-    str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a"); 
-    str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g,"e"); 
-    str = str.replace(/ì|í|ị|ỉ|ĩ/g,"i"); 
-    str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g,"o"); 
-    str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g,"u"); 
-    str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g,"y"); 
-    str = str.replace(/đ/g,"d");
-    str = str.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g, "A");
-    str = str.replace(/È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ/g, "E");
-    str = str.replace(/Ì|Í|Ị|Ỉ|Ĩ/g, "I");
-    str = str.replace(/Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ/g, "O");
-    str = str.replace(/Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ/g, "U");
-    str = str.replace(/Ỳ|Ý|Ỵ|Ỷ|Ỹ/g, "Y");
-    str = str.replace(/Đ/g, "D");
-    // Some system encode vietnamese combining accent as individual utf-8 characters
-    // Một vài bộ encode coi các dấu mũ, dấu chữ như một kí tự riêng biệt nên thêm hai dòng này
-    str = str.replace(/\u0300|\u0301|\u0303|\u0309|\u0323/g, ""); // ̀ ́ ̃ ̉ ̣  huyền, sắc, ngã, hỏi, nặng
-    str = str.replace(/\u02C6|\u0306|\u031B/g, ""); // ˆ ̆ ̛  Â, Ê, Ă, Ơ, Ư
-    // Remove extra spaces
-    // Bỏ các khoảng trắng liền nhau
-    str = str.replace(/ + /g," ");
-    str = str.trim();
-    // Remove punctuations
-    // Bỏ dấu câu, kí tự đặc biệt
-    str = str.replace(/!|@|%|\^|\*|\(|\)|\+|\=|\<|\>|\?|\/|,|\.|\:|\;|\'|\"|\&|\#|\[|\]|~|\$|_|`|-|{|}|\||\\/g," ");
-    return str;
-}
+
