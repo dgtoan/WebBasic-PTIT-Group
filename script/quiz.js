@@ -85,7 +85,7 @@ function submitQuiz() {
         localStorage.setItem("userAnswer", JSON.stringify(userAnswers));
         getCorrectAnswer();
         localStorage.setItem("correctAnswer", JSON.stringify(correctAnswers));
-        window.location.href = "/pages/results.html";
+        window.location.href = "./results.html";
     }
 }
 
@@ -99,7 +99,7 @@ function confirmSubmission() {
     localStorage.setItem("userAnswer", JSON.stringify(userAnswers));
     getCorrectAnswer();
     localStorage.setItem("correctAnswer",JSON.stringify(correctAnswers));
-    window.location.href = "./pages/results.html";
+    window.location.href = "./results.html";
 }
 
 function cancelSubmission() {
