@@ -49,3 +49,20 @@ h1{
     border-radius: 50%;
     overflow: hidden;
 }
+.back-button{
+    padding: 10px 20px;
+    background-color: white;
+    font-size: 15px;
+    border-style: solid;
+    cursor: pointer;
+    color: red;
+    border-color: red;
+    border: 2px solid red;
+    border-radius: 7px;
+    margin-left: 40%;
+}
+.back-button:hover{
+    background-color: red;
+    color: white;
+
+}
