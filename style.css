@@ -1,0 +1,135 @@
+body {
+  min-height: 75rem;
+}
+
+.ptit-color {
+    background-color: #bb2019;
+}
+
+.btn-ptit {
+    border-color: #bb2019;
+    color: #bb2019;
+}
+
+.hidden {
+    display: none;
+}
+.btn-add{
+  margin-left: auto;
+  background-color: #bb2019;
+  border-color: #bb2019;
+}
+.btn-add:hover {
+  background-color: #fa0c00;
+
+}
+.nav-link2 {
+  background-color: #bb2019;
+  border-color: #bb2019;
+  color: #ffffff;
+  margin-right: 5px;
+}
+.btn-primary {
+  background-color: #bb2019;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #fa0c00;
+  color: #ffffff;
+}
+.nav-link:focus, .nav-link:hover {
+  color: #ffffff;
+}
+.btn-ptit:hover,
+.btn-ptit:active,
+.btn-ptit:visited,
+.btn-ptit:focus,
+.btn-ptit:active:focus,
+.btn-ptit:active:hover,
+.btn-ptit:hover:focus,
+.btn-ptit:hover:active,
+.btn-ptit:active:hover:focus,
+.btn-ptit:active:focus:hover,
+.btn-ptit:hover:active:focus,
+.btn-ptit:hover:focus:active,
+.btn-ptit:focus:hover:active,
+.btn-ptit:focus:active:hover,
+.btn-ptit:active:focus:hover,
+.btn-ptit:active:hover:focus {
+    background-color: #bb2019;
+    border-color: #bb2019;
+}
+
+.btn-outline-ptit {
+  background-color: #bb2019;
+  border-color: #bb2019;
+}
+
+.btn-outline-ptit:hover,
+.btn-outline-ptit:active,
+.btn-outline-ptit:visited,
+.btn-outline-ptit:focus,
+.btn-outline-ptit:active:focus,
+.btn-outline-ptit:active:hover,
+.btn-outline-ptit:hover:focus,
+.btn-outline-ptit:hover:active,
+.btn-outline-ptit:active:hover:focus,
+.btn-outline-ptit:active:focus:hover,
+.btn-outline-ptit:hover:active:focus,
+.btn-outline-ptit:hover:focus:active,
+.btn-outline-ptit:focus:hover:active,
+.btn-outline-ptit:focus:active:hover,
+.btn-outline-ptit:active:focus:hover,
+.btn-outline-ptit:active:hover:focus {
+  background-color: #bb2019;
+  border-color: #bb2019;
+}
+
+.red {
+  background-color: #d30000;
+}
+
+.form-control:focus {
+  border-color: #d3000084;
+  box-shadow: 0 0 0 0.2rem #d300004e;
+}
+
+
+
+.btn:disabled {
+  background-color: #d30000A0;
+}
+
+/* dashboard */
+
+.navbar {
+  background-color: #d30000;
+}
+/* css thẻ a, không còn dâu gạch chân */
+
+/* css cho thẻ li, chiều dài = 2/3 chiều dài mặc đinh ban đầu, căn lề các li về bên phải, gióng theo nút menu  */
+
+
+
+.btnview {
+  background-color: #bb2019;
+  border-color: #bb2019;
+}
+
+
+.vertical-line {
+  border-left: 2px solid gray; /* Định dạng đường thẳng đứng */
+  height: 30px; /* Chiều cao của đường thẳng đứng */
+  color: white; /* Màu của đường thẳng đứng */
+}
+
+.btnview :hover {
+  background-color: #fa0c00;
+  border-color: #fa0c00;
+}
+.btnview :active {
+  background-color: #fa0c00;
+  border-color: #fa0c00;
+}
+
+
+

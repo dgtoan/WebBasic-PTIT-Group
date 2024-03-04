@@ -1,0 +1,42 @@
+[
+    {
+        "question": "1.Among the following, which is the HTML paragraph tag?",
+        "a": "A. &lt;p&gt",
+        "b": "B. &ltpre&gt",
+        "c": "C. &lthr&gt",
+        "d": "D. &lta&gt",
+        "correct": "a"
+    },
+    {
+        "question": "2.Who is the father of HTML?",
+        "a": "A. Rasmus Lerdorf",
+        "b": "B. Tim Berners-Lee",
+        "c": "C. Brendan Eich",
+        "d": "D. Sergey Brin",
+        "correct": "b"
+    },
+    {
+        "question": "3. HTML stands for __________",
+        "a": "A. HyperText Markup Language",
+        "b": "B. HyperText Machine Language",
+        "c": "C. HyperText Marking Language",
+        "d": "D. HighText Marking Language",
+        "correct": "a"
+    },
+    {
+        "question": "4. What is the correct syntax of doctype in HTML5?",
+        "a": "A. &lt/doctype html&gt",
+        "b": "B. &ltdoctype html&gt",
+        "c": "C. &ltdoctype html!&gt",
+        "d": "D. &lt!doctype html&gt",
+        "correct": "d"
+    },
+    {
+        "question": "5. Which of the following tag is used for inserting the largest heading in HTML?",
+        "a": "A. head",
+        "b": "B. &lth1&gt",
+        "c": "C. &lth6&gt",
+        "d": "D. heading",
+        "correct": "b"
+    }
+]
