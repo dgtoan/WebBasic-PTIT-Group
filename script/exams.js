@@ -10,32 +10,32 @@ function showExams(){
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title mx-3">Add exam</h5>
+                <h5 class="modal-title mx-3">Thêm bài kiểm tra</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form id="add-exam-form">
                     <div class="mb-3 mx-3">
-                        <label for="exam-name" class="form-label">Exam name</label>
+                        <label for="exam-name" class="form-label">Tên bài kiểm tra</label>
                         <input type="text" class="form-control" id="exam-name" required>
                     </div>
                     <div class="mb-3 mx-3">
-                        <label for="exam-type" class="form-label">Exam type</label>
+                        <label for="exam-type" class="form-label">Loại</label>
                         <select class="form-select" id="exam-type" required>
-                            <option value="fixed">Fixed</option>
-                            <option value="free">Free</option>
+                            <option value="fixed">Tuỳ chỉnh</option>
+                            <option value="free">Tự do</option>
                         </select>
                     </div>
                     <div class="mb-3 mx-3">
-                        <label for="exam-date" class="form-label d-none">Exam date</label>
+                        <label for="exam-date" class="form-label d-none">Ngày kiểm tra</label>
                         <input type="date" class="form-control" id="exam-date">
                     </div>
                     <div class="mb-3 mx-3">
-                        <label for="exam-time" class="form-label d-none">Exam time</label>
+                        <label for="exam-time" class="form-label d-none">Giờ kiểm tra</label>
                         <input type="time" class="form-control" id="exam-time">
                     </div>
                     <div class="mb-3 mx-3">
-                        <label for="exam-duration" class="form-label">Exam duration</label>
+                        <label for="exam-duration" class="form-label">Thời gian</label>
                         <input type="number" class="form-control" id="exam-duration" required>
                     </div>
                     <!-- Thêm upload file -->
@@ -46,8 +46,8 @@ function showExams(){
                     <div id = "question-list">
                     </div>
                     <!-- thêm nút Add questions -->
-                    <button type="submit" class="btn btn-primary mx-3 my-3" id="add-questions-button">Add questions</button>
-                    <button type="submit" class="btn btn-primary mx-3 my-3" id="save-exam-button">Save Exam</button>
+                    <button type="submit" class="btn btn-primary mx-3 my-3" id="add-questions-button">Thêm câu hỏi</button>
+                    <button type="submit" class="btn btn-primary mx-3 my-3" id="save-exam-button">Lưu</button>
                     \</form>
             </div>
         </div>
@@ -105,11 +105,11 @@ function showExams(){
         <a id="dashboard" class="navbar-brand mx-5" href="#">
             <img src="https://code.ptit.edu.vn/2020/images/logo_ptit.png" alt="logo" width="32" height="32"
               class="d-inline-block align-text-top bg-white p-1 rounded-5">
-            <h5 class="d-inline text-white mx-1">Exams Management</h5>
+            <h5 class="d-inline text-white mx-1">Quản lí kỳ thi</h5>
         </a>
     </div>
     <div class="vertical-line"></div>
-    <button class="btn btn-alert-warning text-light " data-bs-toggle="modal" data-bs-target="#add-exam-modal">Add Exam</button>
+    <button class="btn btn-alert-warning text-light " data-bs-toggle="modal" data-bs-target="#add-exam-modal">Thêm bài kiểm tra</button>
 </nav>
 <div id="exam-list">
 </div>
@@ -164,7 +164,7 @@ function generateList() {
                 }</p>
                 <p class="card-text">Duration: ${exam.duration} minutes</p>
                 <div class="mt-4">
-                    <a  class="btn btn-danger">View</a>
+                    <a  class="btn btn-danger">Xem</a>
                 </div>
             </div>
         `;
