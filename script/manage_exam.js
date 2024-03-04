@@ -7,7 +7,7 @@ const exams = [
 ];
 
 function redirectToAnotherPage() {
-    window.location.href = "./../index.html";
+    window.location.href = "https://dgtoan.github.io/WebBasic-PTIT-Group/pages/index.html";
 }
 
 

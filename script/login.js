@@ -1,5 +1,5 @@
 let isLogin = true;
-let isAdmin = false;
+let isAdmin = true;
 
 function showAdminMenu() {
   if (isAdmin) {
